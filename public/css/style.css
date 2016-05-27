@@ -60,7 +60,7 @@ span.control:hover {
   color: #000;
   background-color: #f5f5f5;
   font-size: 13.3333px;
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: sans-serif;
 }
 .App__header {
   color: #00d8ff;
@@ -228,6 +228,59 @@ span.control:hover {
 }
 .Comment--new > .Comment__content {
   background-color: #ffffde;
+}
+
+.Item__left, .Item__meta, .Item__score, .Item__host {
+  display: inline-block;
+}
+.Item__title {
+  display: inline-block;
+  font-size: 13.2px;
+  font-weight: 700;
+  width: 707px;
+  text-rendering: optimizeLegibility;
+}
+.Items__list {
+  padding-left: 1.5em;
+  list-style: none;
+}
+.Item__host {
+  width: 139px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #999;
+  margin-right: 14px;
+}
+.Item__score {
+  width: 48px;
+  color: #999;
+}
+.Item__title span {
+  color: #777;
+  font-weight: 400;
+}
+.Paginator {
+  margin-left: 1.5em;
+}
+li.ListItem {
+  border-bottom: 1px solid #ddd;
+  height: 23px;
+  margin: 0;
+  padding: 8px 0 4px 0; 
+}
+li.ListItem:hover {
+  background-color: #f0f0f0;
+}
+span.Item__by {
+  width: 123px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-right: 5px;
+  color: #777;
+}
+.Item__time {
+  color: #999;
 }
 /* Highlights a comment and its descendants on hover -- too distracting?
 .Comment:hover > .Comment__content {

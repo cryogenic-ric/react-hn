@@ -9,7 +9,7 @@ var routes = require('./src/routes')
 var app = express()
 app.set('view engine', 'ejs')
 app.set('views', process.cwd() + '/src/views')
-app.set('port', (process.env.PORT || 5000))
+app.set('port', (process.env.PORT || 5005))
 app.use(express.static('public'))
 
 app.get('*', function(req, res) {
